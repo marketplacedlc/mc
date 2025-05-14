@@ -314,7 +314,7 @@
         const res = await fetch(DISCORD_WEBHOOK_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ content: `!Request: ${url}` })
+          body: JSON.stringify({ content: `!Request ${url}` })
         });
         if (!res.ok) throw new Error();
         alert('Request sent successfully!');
